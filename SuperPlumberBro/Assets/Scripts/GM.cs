@@ -93,7 +93,10 @@ public class GM : MonoBehaviour
 
     #endregion
 
-
+    private void OnLevelWasLoaded(int level)
+    {
+        ResetVariables();
+    }
 
     #region Level
 
@@ -129,7 +132,7 @@ public class GM : MonoBehaviour
 
     
 
-    float currentTime = 10.0f;
+    float currentTime = 30.0f;
     public static float Timer
     {
         get
@@ -204,11 +207,28 @@ public class GM : MonoBehaviour
             {
                 if (Time.time > gameOverTime)
                 {
+                    GM.ResetVariables();
+                    Cursor.lockState = CursorLockMode.None;
                     SceneManager.LoadScene("Menu");
                 }
             }
 
         }
+    }
+    public static void ResetVariables()
+    {
+        mSingleton.mScore = 0;
+        mSingleton.currentTool = 0;
+        mSingleton.currentTime = 30.0f;
+        mSingleton.mLevel = 1;
+        GM.Level = 1;
+        mSingleton.startTime = false;
+        mSingleton.gameOver = false;
+        mSingleton.waitTime = 10.0f;
+        mSingleton.lastTime = Time.time + mSingleton.waitTime;
+        mSingleton.gameOverTime = Time.time + mSingleton.gameOverWaitTime;
+        mSingleton.gameOverWaitTime = 5.0f;
+
     }
 
 }

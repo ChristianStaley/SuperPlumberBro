@@ -33,6 +33,7 @@ public class TriggerLoadLevel : MonoBehaviour
             print("Startime");
             if (Time.time > lastTime)
             {
+
                 SceneManager.LoadScene(levelName);
             }
         }
