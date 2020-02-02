@@ -207,7 +207,7 @@ public class GM : MonoBehaviour
             {
                 if (Time.time > gameOverTime)
                 {
-                    GM.ResetVariables();
+                    //GM.ResetVariables();
                     Cursor.lockState = CursorLockMode.None;
                     SceneManager.LoadScene("Menu");
                 }

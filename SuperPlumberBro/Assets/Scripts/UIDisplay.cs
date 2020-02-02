@@ -43,7 +43,7 @@ public class UIDisplay : MonoBehaviour
 
 
             if (textScore!=null)
-                textScore.text = "Score " + GM.Score;
+                textScore.text = "Pay: £" + GM.Score;
             if(textTool!=null)
                 textTool.text = "Tool: " + GM.tool;
             if (textLevel != null)

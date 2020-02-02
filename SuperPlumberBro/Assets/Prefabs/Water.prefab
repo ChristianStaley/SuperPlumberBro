@@ -9731,7 +9731,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3631047282047012073}
   - component: {fileID: 4440790689130063960}
-  - component: {fileID: 2943756528058668903}
   - component: {fileID: 5010812566255966286}
   m_Layer: 0
   m_Name: Hammer_UI_nobg
@@ -9803,21 +9802,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2943756528058668903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6140427865531838353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 829fbdc299f1c5a478228dcecc039a53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  v3Start: {x: 0, y: 10, z: 0}
-  v3End: {x: 0, y: 0, z: 0}
-  speed: 0
 --- !u!114 &5010812566255966286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9830,7 +9814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 829fbdc299f1c5a478228dcecc039a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  v3Start: {x: 0, y: 1, z: 1}
+  v3Start: {x: 0, y: 0.5, z: 1}
   v3End: {x: 0, y: 1.5, z: 1}
   speed: 0.5
 --- !u!1 &7869437037417924337
