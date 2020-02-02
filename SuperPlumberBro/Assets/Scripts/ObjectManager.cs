@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectManager : MonoBehaviour
 {
@@ -10,16 +11,30 @@ public class ObjectManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //repairTargets = GameObject.FindGameObjectsWithTag("Repairable");
+        //foreach (GameObject go in repairTargets)
+        //{
+        //    //print(go);
+        //    go.SetActive(false);
+        //}
+
+
+        //lastSpawnTime = Time.deltaTime;
+    }
+
+    private void OnLevelWasLoaded(int level)
+    {
         repairTargets = GameObject.FindGameObjectsWithTag("Repairable");
         foreach (GameObject go in repairTargets)
         {
             //print(go);
             go.SetActive(false);
         }
+        lastSpawnTime = Time.time;
 
+        waitTime = 5.0f;
 
-        lastSpawnTime = Time.deltaTime;
-    }
+}
 
     // Update is called once per frame
     void Update()
