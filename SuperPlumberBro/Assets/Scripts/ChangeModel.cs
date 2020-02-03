@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class ChangeModel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject wrench;
+    public GameObject hammer;
+
+    private void Start()
     {
-        
+        wrench.SetActive(false);
+        hammer.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if(GM.tool == "Hammer")
+        {
+            hammer.SetActive(true);
+            wrench.SetActive(false);
+        }
+        if (GM.tool == "Wrench")
+        {
+            wrench.SetActive(true);
+            hammer.SetActive(false);
+        }
     }
 }

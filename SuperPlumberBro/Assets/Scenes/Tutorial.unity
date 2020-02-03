@@ -16376,6 +16376,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1151193370632831308, guid: 92c6b308846684f4b9dc3e72cd790226,
+        type: 3}
+      propertyPath: hammer
+      value: 
+      objectReference: {fileID: 1258180636}
+    - target: {fileID: -1151193370632831308, guid: 92c6b308846684f4b9dc3e72cd790226,
+        type: 3}
+      propertyPath: wrench
+      value: 
+      objectReference: {fileID: 1258180637}
     - target: {fileID: 4048179165869848920, guid: 92c6b308846684f4b9dc3e72cd790226,
         type: 3}
       propertyPath: m_Name
@@ -16443,6 +16453,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92c6b308846684f4b9dc3e72cd790226, type: 3}
+--- !u!1 &1258180636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2897655457627206131, guid: 92c6b308846684f4b9dc3e72cd790226,
+    type: 3}
+  m_PrefabInstance: {fileID: 1258180635}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1258180637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5706500571286635325, guid: 92c6b308846684f4b9dc3e72cd790226,
+    type: 3}
+  m_PrefabInstance: {fileID: 1258180635}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1330676479
 GameObject:
   m_ObjectHideFlags: 0

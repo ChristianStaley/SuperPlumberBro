@@ -8,26 +8,12 @@ public class ObjectManager : MonoBehaviour
     
     private float waitTime = 5.0f;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        //repairTargets = GameObject.FindGameObjectsWithTag("Repairable");
-        //foreach (GameObject go in repairTargets)
-        //{
-        //    //print(go);
-        //    go.SetActive(false);
-        //}
-
-
-        //lastSpawnTime = Time.deltaTime;
-    }
 
     private void OnLevelWasLoaded(int level)
     {
         repairTargets = GameObject.FindGameObjectsWithTag("Repairable");
         foreach (GameObject go in repairTargets)
         {
-            //print(go);
             go.SetActive(false);
         }
         lastSpawnTime = Time.time;
@@ -36,7 +22,6 @@ public class ObjectManager : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         waitTime -= GM.Level;
@@ -50,7 +35,6 @@ public class ObjectManager : MonoBehaviour
         {
             int newTarget = Random.Range(0, repairTargets.Length);
             repairTargets[newTarget].SetActive(true);
-            //print("ACIVATING NEW REPAIR");
             lastSpawnTime += waitTime;
         }
     }
