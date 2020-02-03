@@ -16626,7 +16626,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Go Upstair when you fnish this job!
+  m_Text: Go up the stairs when you are ready to play.
 --- !u!222 &1360674619
 CanvasRenderer:
   m_ObjectHideFlags: 0

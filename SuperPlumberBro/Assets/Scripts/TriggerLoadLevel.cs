@@ -10,7 +10,7 @@ public class TriggerLoadLevel : MonoBehaviour
     public GameObject objectText;
 
     private float lastTime;
-    private float waitTime = 5.0f;
+    private float waitTime = 2.0f;
     private bool startTime = false;
 
     private void Start()
@@ -23,6 +23,7 @@ public class TriggerLoadLevel : MonoBehaviour
         objectText.SetActive(true);
         startTime = true;
         lastTime = Time.time + waitTime;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
 
     }
 

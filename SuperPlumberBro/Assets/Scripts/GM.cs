@@ -214,6 +214,13 @@ public class GM : MonoBehaviour
             }
 
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("Menu");
+        }
+
     }
     public static void ResetVariables()
     {
